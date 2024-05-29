@@ -1,5 +1,6 @@
 import { Box, Container, Flex, Heading, Text, VStack, HStack, Button, Image, Link } from "@chakra-ui/react";
 import { FaCalendarAlt, FaInfoCircle } from "react-icons/fa";
+import { Link as RouterLink } from "react-router-dom"; // Import RouterLink
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
             <HStack spacing={8}>
               <Link href="#upcoming-events" fontSize="lg">Upcoming Events</Link>
               <Link href="#about" fontSize="lg">About</Link>
+              <Button as={RouterLink} to="/create-event" colorScheme="teal" variant="outline">Create Event</Button> {/* Add link to CreateEvent page */}
               <Button colorScheme="teal" variant="outline">Login</Button>
             </HStack>
           </Flex>
