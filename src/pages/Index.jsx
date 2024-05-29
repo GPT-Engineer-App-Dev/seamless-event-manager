@@ -42,7 +42,7 @@ const Index = () => {
                   <Heading as="h4" size="md">Event Title</Heading>
                   <Text mt={2}><FaCalendarAlt /> Date & Time</Text>
                   <Text mt={2}><FaInfoCircle /> Short Description of the event.</Text>
-                  <Button mt={4} colorScheme="teal">Learn More</Button>
+                  <Button as={RouterLink} to={{ pathname: "/book-tickets", state: { event: { name: "Event Title" } } }} colorScheme="teal">Book Tickets</Button> {/* Add link to BookTickets page */}
                 </Box>
               </Flex>
             </Box>
